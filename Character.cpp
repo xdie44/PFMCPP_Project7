@@ -92,7 +92,7 @@ void Character::RestoreAndUpgrade (int& value, int& initialValue)
         value = initialValue;
     }
 
-    value *= 1.1;
+    value += value * 0.1;
     initialValue = value;
 }
 
@@ -108,9 +108,9 @@ void Character::attackInternal(Character& other)
             b) your stats are boosted 10%
             c) the initial value of your stats is updated to reflect this boosted stat for the next time you defeat another character.
       */
-        RestoreAndUpgrade(other.hitPoints, *other.initialHitPoints);
-        RestoreAndUpgrade(other.armor, *other.initialArmorLevel);
-        RestoreAndUpgrade(other.attackDamage, *other.initialAttackDamage);
+        RestoreAndUpgrade(hitPoints, *initialHitPoints);
+        RestoreAndUpgrade(armor, *initialArmorLevel);
+        RestoreAndUpgrade(attackDamage, *initialAttackDamage);
 
         //assert(false);
         std::cout << getName() << " defeated " << other.getName() << " and leveled up!" << std::endl;        

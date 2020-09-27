@@ -6,8 +6,8 @@ int dwarfAttackDamage = 4;
 
 Dwarf::Dwarf (std::string namestring, int hitP, int armourP) : Character( hitP, armourP, dwarfAttackDamage), name(namestring) 
 {
-    helpfulItems = makeHelpfulItems(5);
-    defensiveItems = makeDefensiveItems(1);
+    helpfulItems = makeHelpfulItems(2);
+    defensiveItems = makeDefensiveItems(5);
 }
 
 //Dwarf::getName

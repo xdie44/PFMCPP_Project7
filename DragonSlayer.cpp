@@ -9,8 +9,8 @@ int dragonSlAttackDamage = 4;
 
 DragonSlayer::DragonSlayer (std::string namestring, int hitP, int armourP) : Character( hitP, armourP, dragonSlAttackDamage), name(namestring) 
 {
-    helpfulItems = makeHelpfulItems(4);
-    defensiveItems = makeDefensiveItems(2);
+    helpfulItems = makeHelpfulItems(3);
+    defensiveItems = makeDefensiveItems(1);
 }
 
 //DragonSlayer::getName
