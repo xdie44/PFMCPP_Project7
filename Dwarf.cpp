@@ -1,7 +1,9 @@
 #include "Dwarf.h"
 
 //Dwarf::Dwarf
-Dwarf::Dwarf (std::string namestring, int hitP, int armourP) : Character( hitP, armourP, 4), name(namestring) 
+int dwarfAttackDamage = 4; 
+
+Dwarf::Dwarf (std::string namestring, int hitP, int armourP) : Character( hitP, armourP, dwarfAttackDamage), name(namestring) 
 {
 
 

@@ -1,7 +1,9 @@
 #include "Paladin.h"
 
 // Paladin::Paladin
-Paladin::Paladin (std::string namestring, int hitP, int armourP) : Character( hitP, armourP, 4), name(namestring) 
+int paladinAttackDamage = 10;
+
+Paladin::Paladin (std::string namestring, int hitP, int armourP) : Character( hitP, armourP, paladinAttackDamage), name(namestring) 
 {
 
 }
