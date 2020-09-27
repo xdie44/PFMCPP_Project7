@@ -55,7 +55,7 @@ struct Character
 
     void printStats();
 
-void RestoreAndUpgrade(int& value, int& initialValue);
+    void RestoreAndUpgrade(int& value, int& initialValue);
 
 protected:
     std::vector<std::unique_ptr<Item>> defensiveItems;

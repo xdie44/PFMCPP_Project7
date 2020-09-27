@@ -1,5 +1,6 @@
 #include "Dragon.h"
 #include "DragonSlayer.h"
+#include "Utility.h"
 
 //Dragon::Dragon
 int dragonAttackDamage = 80; 
@@ -30,7 +31,7 @@ const std::string& Dragon::getName()
 }
 
 //Dragon::getStats
-std::string getStats()
+std::string Dragon::getStats()
 {
-
+    return getCharacterStats(this);
 }

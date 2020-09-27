@@ -85,7 +85,7 @@ int Character::takeDamage(int damage)
     printStats();
     return hitPoints;
 }
-void RestoreAndUpgrade (int& value, int& initialValue)
+void Character::RestoreAndUpgrade (int& value, int& initialValue)
 {
     if (value < initialValue)
     {
