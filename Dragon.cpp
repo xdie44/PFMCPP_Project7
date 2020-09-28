@@ -3,9 +3,8 @@
 #include "Utility.h"
 
 //Dragon::Dragon
-int dragonAttackDamage = 80; 
 
-Dragon::Dragon (std::string namestring, int hitP, int armourP) : Character( hitP, armourP, dragonAttackDamage), name(namestring) 
+Dragon::Dragon (std::string namestring, int hitP, int armourP) : Character( hitP, armourP, 80), name(namestring) 
 {
 
 }
